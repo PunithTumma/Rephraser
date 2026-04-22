@@ -1,0 +1,7 @@
+{
+  "name": "rephraser",
+  "version": "0.0.1",
+  "description": "Rephrase the current prompt from Claude Code via a slash command.",
+  "license": "UNLICENSED"
+}
+
