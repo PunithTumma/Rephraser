@@ -1,0 +1,11 @@
+[project]
+name = "rephraser-claude-plugin"
+version = "0.0.1"
+description = "Claude Code plugin scaffold for rephrasing prompts."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[tool.uv]
+# Keep empty for now; dependencies will be added when we implement the rephraser logic.
+
