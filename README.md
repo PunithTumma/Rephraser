@@ -1,6 +1,11 @@
 # Rephraser (Claude Code Plugin)
 
-This repository is a scaffold for a Claude Code plugin that will rephrase the current prompt via a slash command (planned: `/rephrase`).
+This repository is a Claude Code plugin that rephrases your last prompt via `/rephrase`.
+
+## Usage
+
+- Run `/rephrase` to rewrite your most recent prompt (clearer, same intent).
+- Optional args: `/rephrase [tone] [length] [audience]` (example: `/rephrase direct shorter senior-engineer`).
 
 ## Layout
 
@@ -21,5 +26,5 @@ This repository is a scaffold for a Claude Code plugin that will rephrase the cu
 
 ## Development (uv)
 
-- Create and manage a virtualenv with `uv` (to be used once we add implementation).
-- No rephrase logic is implemented yet; this is just the initial scaffold.
+- No Python code is required for `/rephrase` right now; it’s implemented as a command prompt template.
+- `scripts/` and `pyproject.toml` are reserved for future automation (optional).
