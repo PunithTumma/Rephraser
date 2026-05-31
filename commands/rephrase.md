@@ -1,14 +1,5 @@
 ---
 name: rephrase
-<<<<<<< Updated upstream
-description: Rephrase the current prompt (placeholder; implementation pending).
----
-
-TODO:
-- Decide what inputs this command accepts (tone, length, audience).
-- Wire this command to a script under `${CLAUDE_PLUGIN_ROOT}/scripts/` (likely `uv run ...`).
-
-=======
 description: Convert raw notes into structured, implementation-ready requirements JSON.
 argument-hint: ""
 ---
@@ -76,4 +67,3 @@ Quality checks (satisfy all):
 - Output is implementation-ready.
 
 Input: Use the user’s most recent message in this chat as the raw notes to rewrite.
->>>>>>> Stashed changes
