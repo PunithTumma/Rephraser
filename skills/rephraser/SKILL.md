@@ -6,25 +6,16 @@ version: 0.0.1
 
 ## Default behavior
 
-When invoked, rewrite the provided text or prompt to be:
-- clearer and more specific,
-- easier for an LLM to follow,
-- faithful to the original intent and constraints.
+Transform raw notes into structured, implementation-ready requirements while preserving:
+- intent and constraints,
+- examples and edge cases,
+- technical references exactly (IDs, file paths, API endpoints, branch names, table names),
+- business logic.
 
-Do not introduce new requirements, facts, or commitments.
-
-## Ask vs. rewrite
-
-If the input is missing critical details needed to rewrite correctly (e.g., target audience, required output format, must-keep constraints), ask up to 2 clarifying questions. Otherwise, rewrite immediately.
-
-## Style controls
-
-If the user specifies any of these, follow them:
-- tone (e.g., neutral, friendly, direct, formal)
-- length (shorter, same length, longer)
-- audience (beginner, expert, executives, customers)
-- output format (bullets, numbered steps, template)
+Do not answer the request, provide solutions, analyze, explain, summarize, add requirements, remove important context, infer missing info, or modify technical identifiers.
 
 ## Output
 
-Return only the rewritten text unless the user explicitly asks for explanation.
+When the surrounding instruction specifies a response schema, output must:
+- be valid JSON only (no markdown, no code fences, no extra text),
+- match the requested schema shape and keys exactly.
